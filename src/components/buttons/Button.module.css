@@ -1,0 +1,11 @@
+.button {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: var(--main-color3);
+    background-color: var(--main-color1);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
