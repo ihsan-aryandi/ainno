@@ -29,6 +29,18 @@ body, input {
 /* 
     Flex
 */
+.d-flex {
+    display: flex;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -37,6 +49,13 @@ body, input {
 
 .flex-column {
     flex-direction: column;
+}
+
+/* 
+    Colors
+*/
+.grey-color3 {
+    color: var(--grey-color3);
 }
 
 /* 
@@ -75,4 +94,89 @@ body, input {
 
 .mb-4 {
     margin-bottom: 2rem;
+}
+
+.mb-5 {
+    margin-bottom: 2.5rem;
+}
+
+.mb-6 {
+    margin-bottom: 3rem;
+}
+
+.mt-1 {
+    margin-top: .5rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.mt-5 {
+    margin-top: 2.5rem;
+}
+
+.mt-6 {
+    margin-top: 3rem;
+}
+
+/* 
+    Paddings
+*/
+.px-1 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.px-2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.px-3 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.px-4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.px-5 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.px-6 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* 
+    Fonts
+*/
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--main-color1);
 }
