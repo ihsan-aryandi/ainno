@@ -8,4 +8,10 @@
     outline: none;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:focus, .button:hover {
+    box-shadow: 0 0 5px var(--main-color1);
 }

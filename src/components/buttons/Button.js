@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './Button.module.css'
 
-export default function Button({ className, label }) {
+export default function Button({ className, label = "", type }) {
     return (
-        <button className={`${styles.button} ${className}`}>{label}</button>
+        <button className={`${styles.button} ${className}`} type={type}>{label}</button>
     )
 }

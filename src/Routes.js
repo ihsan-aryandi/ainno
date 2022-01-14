@@ -1,5 +1,5 @@
 import React from 'react'
-import LoginPage from './pages/login/LoginPage';
+import LoginPage from 'pages/login/LoginPage';
 import {
     BrowserRouter as Router,
     Routes,

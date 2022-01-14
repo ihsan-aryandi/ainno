@@ -7,7 +7,6 @@ import Button from 'components/buttons/Button'
 import { Link } from 'react-router-dom'
 
 export default function LoginPage() {
-    console.log(styles)
     return (
         <div className="full-screen px-6 bg-grey-color1 d-flex items-center flex-column">
             <img className={`${styles.logo} mb-5`} src="/images/ainno-logo.png" alt="Ainno Logo" />
@@ -16,7 +15,7 @@ export default function LoginPage() {
                 <Form>
                     <Input label="Username" className="mb-3" autoFocus />
                     <Input label="Password" className="mb-4" type="password" />
-                    <Button label={"Masuk"} className="mb-4" />
+                    <Button label="Masuk" className="mb-4" />
                     <p className='grey-color3' style={{fontSize: '.9rem'}}>Belum memiliki akun ? <Link className="link" to="/register">Buat akun</Link></p>
                 </Form>
             </Card>
