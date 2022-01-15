@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './LoginPage.module.css'
-import Input from 'components/input/Input'
+import Input from 'components/inputs/Input'
 import Card from 'components/cards/Card'
 import Form from 'components/forms/Form'
 import Button from 'components/buttons/Button'
@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 export default function LoginPage() {
     return (
-        <div className="full-screen px-6 bg-grey-color1 d-flex items-center flex-column">
+        <div className="full-screen px-8 bg-grey-color1 d-flex items-center flex-column">
             <img className={`${styles.logo} mb-5`} src="/images/ainno-logo.png" alt="Ainno Logo" />
             <h1 className="regular mb-6">Masuk ke Ainno</h1>
             <Card className="bg-main-color3 px-5" maxWidth="400px">
