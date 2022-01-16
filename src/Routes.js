@@ -1,5 +1,6 @@
 import React from 'react'
 import LoginPage from 'pages/login/LoginPage';
+import DiscussPage from 'pages/discuss/DiscussPage';
 import Navbar from 'components/navbars/Navbar';
 import {
     BrowserRouter as Router,
@@ -13,9 +14,20 @@ export default function SetupRoutes() {
         <Router>
             <Routes>
                 <Route path="/" element={<WithNavbar />}>
-                    <Route path="/discuss" element={<h1>Ini halaman discuss</h1>} />
+                    {/* 
+                        Discuss Pages
+                    */}
+                    <Route path="/discuss" element={<DiscussPage />} />
+
+                    {/* 
+                        Contact Pages
+                    */}
                     <Route path="/contact" element={<h1>Ini halaman contact</h1>} />
                 </Route>
+
+                {/* 
+                    Login Page
+                */}
                 <Route path="/login" element={<LoginPage />} />
             </Routes>
         </Router>        

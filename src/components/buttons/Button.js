@@ -7,22 +7,19 @@ export default function Button({
     type = 'button', 
     transparent = false,
     full = false, 
-    padding = '' 
+    padding = '',
+    fontSize = ''
 }) {
     let buttonClass = styles.button
     let style = {}
 
-    if (transparent) {
-        buttonClass = styles['button-transparent']
-    }
+    if (transparent) buttonClass = styles['button-transparent']
 
-    if (full) {
-        buttonClass += ` ${styles['full']}`
-    }
+    if (full) buttonClass += ` ${styles['full']}`
 
-    if (padding !== '') {
-        style.padding = padding
-    }
+    if (padding !== '') style.padding = padding
+
+    if (fontSize !== '') style.fontSize = fontSize
 
     return (
         <button 
