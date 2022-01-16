@@ -58,13 +58,25 @@ body, input {
 /* 
     Colors
 */
+.main-color1 {
+    color: var(--main-color1) !important;
+}
+
 .grey-color3 {
-    color: var(--grey-color3);
+    color: var(--grey-color3) !important;
 }
 
 /* 
     Background colors
 */
+.bg-main-color1 {
+    background-color: var(--main-color1);
+}
+
+.bg-main-color2 {
+    background-color: var(--main-color2);
+}
+
 .bg-main-color3 {
     background-color: var(--main-color3);
 }

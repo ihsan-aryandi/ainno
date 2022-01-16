@@ -1,9 +1,9 @@
-.button {
+.button, .button-transparent {
     display: inline-block;
-    width: 100%;
     padding: 0.8rem;
     font-size: 1rem;
     color: var(--main-color3);
+    font-weight: 500;
     background-color: var(--main-color1);
     outline: none;
     border: none;
@@ -14,4 +14,12 @@
 
 .button:focus, .button:hover {
     box-shadow: 0 0 5px var(--main-color1);
+}
+
+.button-transparent {
+    background-color: transparent;
+}
+
+.full {
+    width: 100%;
 }

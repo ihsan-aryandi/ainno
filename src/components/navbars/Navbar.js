@@ -9,14 +9,27 @@ import {
 } from 'react-router-dom'
 import styles from './Navbar.module.css'
 
+const LINKS = [
+    {
+        label: 'Diskusi',
+        to: '/discuss'
+    },
+    {
+        label: 'Kontak',
+        to: '/contact'
+    }
+]
+
 export default function Navbar() {
+    const isAuthenticated = false
+
     return (
         <nav className={styles.navbar}>
             <Container>
                 <Brand /> 
                 <SearchInput className='search mr-6' placeholder='Cari...' id='search-input'/>
                 <NavLinks className='mr-4' />
-                <Auth />
+                {isAuthenticated ? <Profile /> : <Auth />}                
             </Container>
         </nav>
     )
@@ -32,20 +45,9 @@ function Brand() {
 }
 
 function NavLinks({ className = '' }) {
-    const links = [
-        {
-            label: 'Diskusi',
-            to: '/discuss'
-        },
-        {
-            label: 'Kontak',
-            to: '/contact'
-        }
-    ]
-
     return (
         <div className={`${styles['nav-links']} ${className}`}>
-            {links.map((link, i) => (
+            {LINKS.map((link, i) => (
                 <NavLink 
                     key={i} 
                     to={link.to} 
@@ -71,10 +73,23 @@ function NavLink({ to = '', label = '' }) {
     )
 }
 
-function Auth() {
+function Auth({ className = '' }) {
     return (
-        <div>
-            <Button label='Daftar' />
+        <div className={`${styles.auth} ${className}`}>
+            <Link className='mr-3' to='/login'>
+                <Button className='main-color1' label='Masuk' transparent />
+            </Link>
+            <Link to='/register'>
+                <Button label='Daftar' padding='0.8rem 1.5rem' />
+            </Link>
         </div>
     )
+}
+
+function Profile() {
+    return (
+        <div className={styles.profile}>
+            <img src='/images/profile-example.jpg' alt='profile example' title='Dasha Taran' />
+        </div>
+    )   
 }

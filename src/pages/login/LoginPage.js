@@ -15,7 +15,7 @@ export default function LoginPage() {
                 <Form>
                     <Input label="Username" className="mb-3" autoFocus />
                     <Input label="Password" className="mb-4" type="password" />
-                    <Button label="Masuk" className="mb-4" />
+                    <Button label="Masuk" className="mb-4" full />
                     <p className='grey-color3' style={{fontSize: '.9rem'}}>Belum memiliki akun ? <Link className="link" to="/register">Buat akun</Link></p>
                 </Form>
             </Card>
