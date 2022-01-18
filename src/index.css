@@ -8,6 +8,7 @@
     --grey-color2: #DEDEDE;
     --grey-color3: #808080;
     --dark-color1: #333333;
+    --add-color1: #e0ebff;
 }
 
 * {
@@ -73,6 +74,29 @@ body, input {
 /* 
     Background colors
 */
+.fill-main-color1 {
+    fill: var(--main-color1);
+}
+
+.fill-main-color2 {
+    fill: var(--main-color2);
+}
+
+.fill-main-color3 {
+    fill: var(--main-color3);
+}
+
+.fill-grey-color1 {
+    fill: var(--grey-color1);
+}
+
+.fill-grey-color3 {
+    fill: var(--grey-color3);
+}
+
+/* 
+    Fill colors
+*/
 .bg-main-color1 {
     background-color: var(--main-color1);
 }
@@ -126,6 +150,14 @@ body, input {
 
 .mb-6 {
     margin-bottom: 3rem !important;
+}
+
+.mb-7 {
+    margin-bottom: 3.5rem !important;
+}
+
+.mb-8 {
+    margin-bottom: 4rem !important;
 }
 
 /* 
@@ -217,6 +249,14 @@ body, input {
     margin-left: 3rem !important;
 }
 
+.ml-7 {
+    margin-left: 3.5rem !important;
+}
+
+.ml-8 {
+    margin-left: 4rem !important;
+}
+
 /* 
     Paddings
 */
@@ -282,6 +322,30 @@ body, input {
 
 .text-decoration-none {
     text-decoration: none;
+}
+
+.f-1 {
+    font-size: 1rem;
+}
+
+.f-2 {
+    font-size: 1.2rem;
+}
+
+.f-3 {
+    font-size: 1.4rem;
+}
+
+.f-4 {
+    font-size: 1.6rem;
+}
+
+.f-5 {
+    font-size: 1.8rem;
+}
+
+.f-6 {
+    font-size: 2rem;
 }
 
 /* 

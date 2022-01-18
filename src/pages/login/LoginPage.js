@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './LoginPage.module.css'
-import Input from 'components/inputs/Input'
+import Input from 'components/inputs/regular-input/Input'
 import Card from 'components/cards/Card'
 import Form from 'components/forms/Form'
 import Button from 'components/buttons/Button'
