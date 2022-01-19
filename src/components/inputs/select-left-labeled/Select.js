@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import AngelIcon from 'components/icons/AngelIcon'
 import styles from './Select.module.css'
 
-export default function Select({ label = '', placeholder = '', defaultValue, data = [] }) {
+export default function Select({ className = '', label = '', placeholder = '', defaultValue, data = [] }) {
     const [selectedValue, setSelectedValue] = useState(() => data.find(item => item.value === defaultValue))
     const [isOpen, setIsOpen] = useState(false)
     
@@ -21,7 +21,7 @@ export default function Select({ label = '', placeholder = '', defaultValue, dat
     }, [])
 
     return (
-        <div className={styles['select-container']}>
+        <div className={`${styles['select-container']} ${className}`}>
             <span>{label}</span>
             <div className={styles.select} ref={selectRef} onClick={() => setIsOpen(prevState => !prevState)}>
                 {selectedValue 

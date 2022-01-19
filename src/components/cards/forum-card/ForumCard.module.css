@@ -1,0 +1,23 @@
+.forum-card {
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.forum-card-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.forum-card-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.forum-card-body p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--grey-color3);
+}

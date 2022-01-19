@@ -2,6 +2,7 @@ import React from 'react'
 import Container from 'components/containers/Container'
 import Button from 'components/buttons/Button'
 import Select from 'components/inputs/select-left-labeled/Select'
+import ForumCard from 'components/cards/forum-card/ForumCard'
 import { Link } from 'react-router-dom'
 
 export default function DiscussPage() {
@@ -24,7 +25,7 @@ export default function DiscussPage() {
         }
     ]
     return (
-        <Container className='mt-8' maxWidth='1440px'>
+        <Container className='mt-8' maxWidth='1080px'>
             <div className='d-flex content-between items-center mb-8'>
                 <h1 className='medium default-color'>Semua pertanyaan</h1>
                 <Link to='/ask-question'>
@@ -33,7 +34,14 @@ export default function DiscussPage() {
             </div>
             <div className='d-flex content-between items-center'>
                 <span className='total-question f-3'>200 pertanyaan</span>
-                <Select label='Saring' placeholder='Placeholder' defaultValue='vote' data={data} />
+                <div className='d-flex items-center'>
+                    <Select className='mr-4' label='Saring' defaultValue='vote' data={data} />
+                    <Select label='Urut' defaultValue='vote' data={data} />
+                </div>
+            </div>
+            <hr className='bg-grey-color2 my-3' style={{ border: 'none', height: '1px' }} />
+            <div className='questions'>
+                <ForumCard />
             </div>
         </Container>
     )

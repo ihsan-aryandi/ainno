@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
     --main-color1: #2B73FF;
@@ -67,6 +67,10 @@ body, input {
     color: var(--main-color1) !important;
 }
 
+.grey-color2 {
+    color: var(--grey-color2) !important;
+}
+
 .grey-color3 {
     color: var(--grey-color3) !important;
 }
@@ -111,6 +115,10 @@ body, input {
 
 .bg-grey-color1 {
     background-color: var(--grey-color1);
+}
+
+.bg-grey-color2 {
+    background-color: var(--grey-color2);
 }
 
 /* 
@@ -258,6 +266,49 @@ body, input {
 }
 
 /* 
+    Vertical
+*/
+.my-1 {
+    margin-top: .5rem !important;
+    margin-bottom: .5rem !important;
+}
+
+.my-2 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.my-3 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.my-4 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.my-5 {
+    margin-top: 2.5rem !important;
+    margin-bottom: 2.5rem !important;
+}
+
+.my-6 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.my-7 {
+    margin-top: 3.5rem !important;
+    margin-bottom: 3.5rem !important;
+}
+
+.my-8 {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+}
+
+/* 
     Paddings
 */
 .px-1 {
@@ -315,6 +366,10 @@ body, input {
     font-weight: 500;
 }
 
+.semi-bold {
+    font-weight: 600;
+}
+
 .link {
     text-decoration: none;
     color: var(--main-color1);
@@ -346,6 +401,14 @@ body, input {
 
 .f-6 {
     font-size: 2rem;
+}
+
+/* 
+    Image
+*/
+.img-rounded {
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* 
