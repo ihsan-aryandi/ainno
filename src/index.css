@@ -18,6 +18,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+html {
+    font-size: 14px;
+}
+
 body, input {
     color: var(--dark-color1);
 }
@@ -309,6 +313,55 @@ body, input {
 }
 
 /* 
+    Horizontal
+*/
+
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.mx-1 {
+    margin-left: .5rem !important;
+    margin-right: .5rem !important;
+}
+
+.mx-2 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+}
+
+.mx-3 {
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+}
+
+.mx-4 {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+}
+
+.mx-5 {
+    margin-left: 2.5rem !important;
+    margin-right: 2.5rem !important;
+}
+
+.mx-6 {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+}
+
+.mx-7 {
+    margin-left: 3.5rem !important;
+    margin-right: 3.5rem !important;
+}
+
+.mx-8 {
+    margin-left: 4rem !important;
+    margin-right: 4rem !important;
+}
+
+/* 
     Paddings
 */
 .px-1 {
@@ -418,5 +471,6 @@ body, input {
     position: relative;
     width: 90%;
     margin: auto;
-    max-width: 1800px;
+    /* background-color: red; */
+    max-width: 1280px;
 }

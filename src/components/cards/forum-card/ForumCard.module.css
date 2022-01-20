@@ -6,8 +6,8 @@
 }
 
 .forum-card-title {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.8rem;
 }
 
 .forum-card-profile {
@@ -16,8 +16,44 @@
     margin-bottom: 1rem;
 }
 
+.forum-card-profile span {
+    font-size: .8rem;
+}
+
+.forum-card-body {
+    margin-bottom: 2rem;
+}
+
 .forum-card-body p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5;
     color: var(--grey-color3);
+}
+
+.forum-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forum-card-footer span {
+    font-size: .9rem;
+}
+
+.vote-container {
+    display: flex;
+    align-items: center;
+}
+
+.vote {
+    cursor: pointer;
+    transition: .1s;
+}
+
+.vote:hover {
+    fill: var(--main-color2);
+}
+
+.up-vote {
+    transform: rotate(180deg);
 }
