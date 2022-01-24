@@ -474,3 +474,11 @@ body, input {
     /* background-color: red; */
     max-width: 1280px;
 }
+
+.user-select-none {
+    user-select: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

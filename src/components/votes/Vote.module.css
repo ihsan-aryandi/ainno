@@ -1,0 +1,20 @@
+.vote-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    width: max-content;
+}
+
+.vote {
+    cursor: pointer;
+    transition: .1s;
+}
+
+.vote:hover {
+    fill: var(--main-color2);
+}
+
+.up-vote {
+    transform: rotate(180deg);
+}

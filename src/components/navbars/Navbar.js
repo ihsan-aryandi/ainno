@@ -8,6 +8,7 @@ import {
     useMatch 
 } from 'react-router-dom'
 import styles from './Navbar.module.css'
+import appendClass from 'utils/class'
 
 const LINKS = [
     {
@@ -24,7 +25,7 @@ export default function Navbar() {
     const isAuthenticated = false
 
     return (
-        <nav className={styles.navbar}>
+        <nav className={appendClass(styles.navbar, 'mb-5')}>
             <Container>
                 <Brand /> 
                 <SearchInput className='search mr-6' placeholder='Cari...' id='search-input'/>

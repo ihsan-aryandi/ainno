@@ -8,6 +8,7 @@ import {
     Route,
     Outlet
 } from "react-router-dom";
+import DetailQuestionsPage from 'pages/details-question/DetailQuestionsPage';
 
 export default function SetupRoutes() {
     return (
@@ -18,6 +19,11 @@ export default function SetupRoutes() {
                         Discuss Pages
                     */}
                     <Route path="/discuss" element={<DiscussPage />} />
+
+                    {/* 
+                        Question Pages
+                    */}
+                    <Route path="/question/:id/:title" element={<DetailQuestionsPage />} />
 
                     {/* 
                         Contact Pages

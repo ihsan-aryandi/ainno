@@ -1,12 +1,13 @@
 import React from 'react'
 import Container from 'components/containers/Container'
 import Button from 'components/buttons/Button'
-import ForumCard from 'components/cards/forum-card/ForumCard'
+import QuestionCard from 'components/cards/question-card/QuestionCard'
+import Line from 'components/lines/Line'
 import { Link } from 'react-router-dom'
 
 export default function DiscussPage() {
     return (
-        <Container className='mt-8' maxWidth='1000px'>
+        <Container maxWidth='800px'>
             <div className='d-flex content-between items-center mb-6'>
                 <h1 className='medium default-color f-6'>Semua pertanyaan</h1>
                 <Link to='/ask-question'>
@@ -16,9 +17,9 @@ export default function DiscussPage() {
             <div className='d-flex content-between items-center'>
                 <span className='total-question f-2'>200 pertanyaan</span>
             </div>
-            <hr className='bg-grey-color2 my-3' style={{ border: 'none', height: '1px' }} />
+            <Line />
             <div className='questions'>
-                <ForumCard className='mx-auto' style={{ maxWidth: '800px' }} totalAnswer={2} />
+                <QuestionCard className='mx-auto' style={{ maxWidth: '800px' }} totalAnswer={2} />
             </div>
         </Container>
     )

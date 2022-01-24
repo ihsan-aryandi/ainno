@@ -1,4 +1,5 @@
 import React from 'react'
+import appendClass from 'utils/class'
 
 export default function Container({ children, className = '', maxWidth = '' }) {
     const styles = {}
@@ -8,6 +9,6 @@ export default function Container({ children, className = '', maxWidth = '' }) {
     }
 
     return (
-        <div className={`container ${className}`} style={styles}>{children}</div>
+        <div className={appendClass('container', className) } style={styles}>{children}</div>
     )
 }
